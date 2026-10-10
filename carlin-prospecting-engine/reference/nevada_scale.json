@@ -1,0 +1,62 @@
+{
+ "arch_fault_density": {
+  "fixed": [
+   0.0,
+   1.03801262
+  ],
+  "note": "value range mapped to 0-1 (Nevada tract)"
+ },
+ "eng_volcanic_intrusive_proximity": {
+  "cap_m": 66180.658503,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "arch_lithologic_contact_proximity": {
+  "cap_m": 5000.0,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "src_eocene_intrusive_proximity": {
+  "cap_m": 170765.511737,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "eng_eocene_belt_density": {
+  "fixed": [
+   0.0,
+   0.00352956249
+  ],
+  "note": "value range mapped to 0-1 (Nevada tract)"
+ },
+ "src_jurassic_cretaceous_intrusive_proximity": {
+  "cap_m": 275088.822019,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "src_basement_proximity": {
+  "cap_m": 255000.0,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "trap_reactive_carbonate": {
+  "cap_m": 39812.058475,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "trap_impermeable_cap": {
+  "cap_m": 48102.598547,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "arch_fault_intersection_density": {
+  "cap_m": 117923.704148,
+  "note": "distance cap in metres (Nevada 98th percentile, or farthest cell for intersections)"
+ },
+ "arch_structural_complexity": {
+  "fixed": [
+   -2.26485497e-13,
+   1.0
+  ],
+  "note": "value range mapped to 0-1 (Nevada tract)"
+ },
+ "arch_fluid_pathway_connectivity": {
+  "fixed": [
+   -1.51654483e-10,
+   13.1484333
+  ],
+  "note": "value range mapped to 0-1 (Nevada tract)"
+ }
+}

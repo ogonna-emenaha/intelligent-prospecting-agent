@@ -1,0 +1,30 @@
+{
+ "magmatic": {
+  "n": 40,
+  "label": "Eocene-magmatic Carlin-type",
+  "use_when": "Ore sits near intrusions or volcanics of the same age as mineralization (Nevada Eocene belt: dated igneous rocks within a few km of ore).",
+  "exclude_layers": []
+ },
+ "magma_poor": {
+  "n": 18,
+  "label": "Magma-poor Carlin-type",
+  "use_when": "Little or no magmatic input is documented: ore controlled by structure and reactive carbonate or carbonaceous host with no age-matched intrusions nearby (for example Yukon Rackla belt).",
+  "exclude_layers": [
+   "eng_eocene_belt_density",
+   "src_eocene_intrusive_proximity",
+   "eng_volcanic_intrusive_proximity",
+   "eng_buried_pluton_proximity",
+   "src_low_magmatic_fertility"
+  ]
+ },
+ "older_buried": {
+  "n": 12,
+  "label": "Older-intrusion / buried-pluton Carlin-type",
+  "use_when": "Mineralization is linked to older (for example Jurassic-Cretaceous) or buried intrusions rather than an age-matched belt.",
+  "exclude_layers": [
+   "eng_eocene_belt_density",
+   "src_eocene_intrusive_proximity"
+  ]
+ },
+ "caveat": "Magma-poor and older/buried families have only 18 and 12 deposits. Their forests are thin; treat results as indicative and read them with the within-family cross-validation in tests/archetype_cv_results.csv."
+}

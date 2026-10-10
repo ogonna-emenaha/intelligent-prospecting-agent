@@ -1,0 +1,23 @@
+source,condition,deposits_top1pct,deposits_top5pct,deposits_top10pct,deposits_top20pct,areas_top1pct,areas_top5pct,areas_top10pct,areas_top20pct,mean_percentile_deposits,mean_percentile_areas,n_deposits,n_areas
+fs_magma_poor,zero-shot magma_poor (k=0),0/28,0/28,1/28,1/28,0/6,0/6,1/6,1/6,0.255,0.467,28,6
+fs_magma_poor,local only [10 layers of magma_poor set] (k=1 other areas),0/28,0/28,0/28,21/28,0/6,0/6,0/6,3/6,0.821,0.755,28,6
+fs_magma_poor,Nevada(magma_poor) + local (k=1 other areas),0/28,1/28,2/28,18/28,0/6,1/6,2/6,4/6,0.801,0.817,28,6
+fs_magma_poor,local only [10 layers of magma_poor set] (k=2 other areas),0/28,13/28,20/28,26/28,0/6,1/6,3/6,4/6,0.907,0.836,28,6
+fs_magma_poor,Nevada(magma_poor) + local (k=2 other areas),0/28,3/28,19/28,25/28,0/6,2/6,4/6,5/6,0.902,0.899,28,6
+fs_magma_poor,local only [10 layers of magma_poor set] (k=5 other areas),14/28,23/28,27/28,27/28,2/6,3/6,5/6,5/6,0.972,0.926,28,6
+fs_magma_poor,Nevada(magma_poor) + local (k=5 other areas),10/28,19/28,26/28,28/28,1/6,3/6,5/6,6/6,0.962,0.943,28,6
+fs_magmatic,zero-shot magmatic (k=0),0/28,3/28,3/28,7/28,0/6,1/6,1/6,3/6,0.723,0.712,28,6
+fs_magmatic,local only [13 layers of magmatic set] (k=1 other areas),0/28,6/28,9/28,25/28,0/6,0/6,1/6,4/6,0.888,0.831,28,6
+fs_magmatic,Nevada(magmatic) + local (k=1 other areas),0/28,3/28,16/28,25/28,0/6,0/6,2/6,5/6,0.872,0.808,28,6
+fs_magmatic,local only [13 layers of magmatic set] (k=2 other areas),0/28,20/28,24/28,27/28,0/6,3/6,4/6,5/6,0.94,0.89,28,6
+fs_magmatic,Nevada(magmatic) + local (k=2 other areas),0/28,13/28,22/28,25/28,0/6,1/6,3/6,5/6,0.92,0.866,28,6
+fs_magmatic,local only [13 layers of magmatic set] (k=5 other areas),2/28,24/28,27/28,28/28,1/6,4/6,5/6,6/6,0.973,0.951,28,6
+fs_magmatic,Nevada(magmatic) + local (k=5 other areas),2/28,22/28,25/28,27/28,0/6,4/6,5/6,5/6,0.947,0.915,28,6
+fs_older_buried,zero-shot older_buried (k=0),0/28,6/28,9/28,11/28,0/6,0/6,2/6,2/6,0.755,0.693,28,6
+fs_older_buried,local only [11 layers of older_buried set] (k=1 other areas),0/28,0/28,0/28,22/28,0/6,0/6,0/6,2/6,0.849,0.763,28,6
+fs_older_buried,Nevada(older_buried) + local (k=1 other areas),0/28,8/28,22/28,27/28,0/6,0/6,2/6,5/6,0.912,0.845,28,6
+fs_older_buried,local only [11 layers of older_buried set] (k=2 other areas),0/28,14/28,22/28,26/28,0/6,3/6,3/6,4/6,0.918,0.847,28,6
+fs_older_buried,Nevada(older_buried) + local (k=2 other areas),0/28,14/28,26/28,27/28,0/6,1/6,4/6,5/6,0.932,0.874,28,6
+fs_older_buried,local only [11 layers of older_buried set] (k=5 other areas),3/28,21/28,26/28,27/28,1/6,3/6,4/6,5/6,0.957,0.909,28,6
+fs_older_buried,Nevada(older_buried) + local (k=5 other areas),1/28,23/28,26/28,28/28,0/6,4/6,4/6,6/6,0.956,0.916,28,6
+zeroshot,baseline: reactive host + fault density,0/28,11/28,21/28,23/28,0/6,1/6,3/6,4/6,0.872,0.767,28,6

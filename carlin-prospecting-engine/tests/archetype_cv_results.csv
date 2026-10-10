@@ -1,0 +1,19 @@
+kind,train,test,layers,n_test,mean_percentile,share_top20
+within-family spatial-block CV,magmatic,magmatic,all 19 layers,40,0.975,1.0
+within-family spatial-block CV,magmatic,magmatic,without 5 intrusion-dependent layers,40,0.952,1.0
+within-family spatial-block CV,magma_poor,magma_poor,all 19 layers,18,0.832,0.667
+within-family spatial-block CV,magma_poor,magma_poor,without 5 intrusion-dependent layers,18,0.848,0.778
+within-family spatial-block CV,older_buried,older_buried,all 19 layers,12,0.889,0.75
+within-family spatial-block CV,older_buried,older_buried,without 5 intrusion-dependent layers,12,0.861,0.75
+cross-family (test family unseen),magmatic,magma_poor,all 19 layers,18,0.737,0.5
+cross-family (test family unseen),magmatic,magma_poor,without 5 intrusion-dependent layers,18,0.796,0.667
+cross-family (test family unseen),magmatic,older_buried,all 19 layers,12,0.595,0.167
+cross-family (test family unseen),magmatic,older_buried,without 5 intrusion-dependent layers,12,0.63,0.083
+cross-family (test family unseen),magma_poor,magmatic,all 19 layers,40,0.832,0.625
+cross-family (test family unseen),magma_poor,magmatic,without 5 intrusion-dependent layers,40,0.809,0.65
+cross-family (test family unseen),magma_poor,older_buried,all 19 layers,12,0.385,0.25
+cross-family (test family unseen),magma_poor,older_buried,without 5 intrusion-dependent layers,12,0.422,0.083
+cross-family (test family unseen),older_buried,magmatic,all 19 layers,40,0.871,0.7
+cross-family (test family unseen),older_buried,magmatic,without 5 intrusion-dependent layers,40,0.817,0.65
+cross-family (test family unseen),older_buried,magma_poor,all 19 layers,18,0.528,0.167
+cross-family (test family unseen),older_buried,magma_poor,without 5 intrusion-dependent layers,18,0.542,0.111

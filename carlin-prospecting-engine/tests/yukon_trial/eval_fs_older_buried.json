@@ -1,0 +1,206 @@
+{
+ "tag": "fs_older_buried",
+ "n_deposits": 28,
+ "n_deposits_dropped_outside_tract": 0,
+ "areas": {
+  "1": 2,
+  "2": 22,
+  "3": 1,
+  "4": 1,
+  "5": 1,
+  "6": 1
+ },
+ "area_km": 15.0,
+ "cells_in_study_area": 284894,
+ "conditions": {
+  "zero-shot older_buried (k=0)": {
+   "deposits_top1pct": "0/28",
+   "deposits_top5pct": "6/28",
+   "deposits_top10pct": "9/28",
+   "deposits_top20pct": "11/28",
+   "areas_top1pct": "0/6",
+   "areas_top5pct": "0/6",
+   "areas_top10pct": "2/6",
+   "areas_top20pct": "2/6",
+   "mean_percentile_deposits": 0.755,
+   "mean_percentile_areas": 0.693,
+   "n_deposits": 28,
+   "n_areas": 6
+  },
+  "local only [11 layers of older_buried set] (k=1 other areas)": {
+   "deposits_top1pct": "0/28",
+   "deposits_top5pct": "0/28",
+   "deposits_top10pct": "0/28",
+   "deposits_top20pct": "22/28",
+   "areas_top1pct": "0/6",
+   "areas_top5pct": "0/6",
+   "areas_top10pct": "0/6",
+   "areas_top20pct": "2/6",
+   "mean_percentile_deposits": 0.849,
+   "mean_percentile_areas": 0.763,
+   "n_deposits": 28,
+   "n_areas": 6
+  },
+  "Nevada(older_buried) + local (k=1 other areas)": {
+   "deposits_top1pct": "0/28",
+   "deposits_top5pct": "8/28",
+   "deposits_top10pct": "22/28",
+   "deposits_top20pct": "27/28",
+   "areas_top1pct": "0/6",
+   "areas_top5pct": "0/6",
+   "areas_top10pct": "2/6",
+   "areas_top20pct": "5/6",
+   "mean_percentile_deposits": 0.912,
+   "mean_percentile_areas": 0.845,
+   "n_deposits": 28,
+   "n_areas": 6
+  },
+  "local only [11 layers of older_buried set] (k=2 other areas)": {
+   "deposits_top1pct": "0/28",
+   "deposits_top5pct": "14/28",
+   "deposits_top10pct": "22/28",
+   "deposits_top20pct": "26/28",
+   "areas_top1pct": "0/6",
+   "areas_top5pct": "3/6",
+   "areas_top10pct": "3/6",
+   "areas_top20pct": "4/6",
+   "mean_percentile_deposits": 0.918,
+   "mean_percentile_areas": 0.847,
+   "n_deposits": 28,
+   "n_areas": 6
+  },
+  "Nevada(older_buried) + local (k=2 other areas)": {
+   "deposits_top1pct": "0/28",
+   "deposits_top5pct": "14/28",
+   "deposits_top10pct": "26/28",
+   "deposits_top20pct": "27/28",
+   "areas_top1pct": "0/6",
+   "areas_top5pct": "1/6",
+   "areas_top10pct": "4/6",
+   "areas_top20pct": "5/6",
+   "mean_percentile_deposits": 0.932,
+   "mean_percentile_areas": 0.874,
+   "n_deposits": 28,
+   "n_areas": 6
+  },
+  "local only [11 layers of older_buried set] (k=5 other areas)": {
+   "deposits_top1pct": "3/28",
+   "deposits_top5pct": "21/28",
+   "deposits_top10pct": "26/28",
+   "deposits_top20pct": "27/28",
+   "areas_top1pct": "1/6",
+   "areas_top5pct": "3/6",
+   "areas_top10pct": "4/6",
+   "areas_top20pct": "5/6",
+   "mean_percentile_deposits": 0.957,
+   "mean_percentile_areas": 0.909,
+   "n_deposits": 28,
+   "n_areas": 6
+  },
+  "Nevada(older_buried) + local (k=5 other areas)": {
+   "deposits_top1pct": "1/28",
+   "deposits_top5pct": "23/28",
+   "deposits_top10pct": "26/28",
+   "deposits_top20pct": "28/28",
+   "areas_top1pct": "0/6",
+   "areas_top5pct": "4/6",
+   "areas_top10pct": "4/6",
+   "areas_top20pct": "6/6",
+   "mean_percentile_deposits": 0.956,
+   "mean_percentile_areas": 0.916,
+   "n_deposits": 28,
+   "n_areas": 6
+  }
+ },
+ "negative_control": {},
+ "layers_used": {
+  "older_buried": [
+   "Fault density",
+   "Fault intersection density",
+   "Fluid pathway connectivity (fault network)",
+   "Structural complexity (fault orientation disorder)",
+   "Proximity to selected lithologic contacts",
+   "Reactive host rock (Nevada: ferroan carbonate)",
+   "Impermeable cap rock",
+   "Ore-fluid geochemical footprint (Nevada proxy: Au/Ag and base metals)",
+   "Proximity to volcanic and intrusive rocks",
+   "Proximity to older (Jurassic-Cretaceous) intrusions",
+   "Distance from basement outcrops (higher = farther)"
+  ]
+ },
+ "diagnostic_layers_used": {
+  "older_buried": [
+   "Ore-fluid geochemical footprint (Nevada proxy: Au/Ag and base metals)"
+  ]
+ },
+ "layer_sign_check": {
+  "older_buried": [
+   {
+    "layer": "Fault density",
+    "district_AUC": 0.84,
+    "archetype_AUC": 0.42,
+    "flag": "SIGN CONFLICT: check how this layer was built, or leave it out"
+   },
+   {
+    "layer": "Fault intersection density",
+    "district_AUC": 0.91,
+    "archetype_AUC": 0.4,
+    "flag": "SIGN CONFLICT: check how this layer was built, or leave it out"
+   },
+   {
+    "layer": "Fluid pathway connectivity (fault network)",
+    "district_AUC": 0.67,
+    "archetype_AUC": 0.42,
+    "flag": "SIGN CONFLICT: check how this layer was built, or leave it out"
+   },
+   {
+    "layer": "Structural complexity (fault orientation disorder)",
+    "district_AUC": 0.58,
+    "archetype_AUC": 0.47,
+    "flag": ""
+   },
+   {
+    "layer": "Proximity to selected lithologic contacts",
+    "district_AUC": 0.9,
+    "archetype_AUC": 0.81,
+    "flag": ""
+   },
+   {
+    "layer": "Reactive host rock (Nevada: ferroan carbonate)",
+    "district_AUC": 0.61,
+    "archetype_AUC": 0.8,
+    "flag": ""
+   },
+   {
+    "layer": "Impermeable cap rock",
+    "district_AUC": 0.66,
+    "archetype_AUC": 0.74,
+    "flag": ""
+   },
+   {
+    "layer": "Ore-fluid geochemical footprint (Nevada proxy: Au/Ag and base metals)",
+    "district_AUC": 0.72,
+    "archetype_AUC": 0.4,
+    "flag": "SIGN CONFLICT: check how this layer was built, or leave it out"
+   },
+   {
+    "layer": "Proximity to volcanic and intrusive rocks",
+    "district_AUC": 0.53,
+    "archetype_AUC": 0.51,
+    "flag": ""
+   },
+   {
+    "layer": "Proximity to older (Jurassic-Cretaceous) intrusions",
+    "district_AUC": 0.57,
+    "archetype_AUC": 0.63,
+    "flag": ""
+   },
+   {
+    "layer": "Distance from basement outcrops (higher = farther)",
+    "district_AUC": 0.35,
+    "archetype_AUC": 0.41,
+    "flag": ""
+   }
+  ]
+ }
+}

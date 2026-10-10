@@ -1,0 +1,13 @@
+source,model,group,n,carlin_vs_group_AUC,group_mean_percentile
+zeroshot,baseline: reactive host + fault density,"other gold and antimony (orogenic, vein, intrusion-related, epithermal)",127,0.832,0.561
+zeroshot,baseline: reactive host + fault density,"other metals (porphyry, skarn, VMS, IOCG, vein base metal)",633,0.832,0.529
+zeroshot,baseline: reactive host + fault density,"sediment-hosted non-Carlin (MVT, SEDEX, manto, barite)",334,0.656,0.757
+zeroshot,zero-shot magmatic,"other gold and antimony (orogenic, vein, intrusion-related, epithermal)",127,0.381,0.767
+zeroshot,zero-shot magmatic,"other metals (porphyry, skarn, VMS, IOCG, vein base metal)",633,0.57,0.645
+zeroshot,zero-shot magmatic,"sediment-hosted non-Carlin (MVT, SEDEX, manto, barite)",334,0.613,0.609
+zeroshot,zero-shot magma_poor,"other gold and antimony (orogenic, vein, intrusion-related, epithermal)",127,0.082,0.675
+zeroshot,zero-shot magma_poor,"other metals (porphyry, skarn, VMS, IOCG, vein base metal)",633,0.163,0.596
+zeroshot,zero-shot magma_poor,"sediment-hosted non-Carlin (MVT, SEDEX, manto, barite)",334,0.307,0.457
+zeroshot,zero-shot older_buried,"other gold and antimony (orogenic, vein, intrusion-related, epithermal)",127,0.66,0.582
+zeroshot,zero-shot older_buried,"other metals (porphyry, skarn, VMS, IOCG, vein base metal)",633,0.812,0.434
+zeroshot,zero-shot older_buried,"sediment-hosted non-Carlin (MVT, SEDEX, manto, barite)",334,0.681,0.592

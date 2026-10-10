@@ -1,0 +1,149 @@
+{
+ "crs": "EPSG:26911",
+ "cell": 1000,
+ "tract": {
+  "file": "study_area_boundary.gpkg"
+ },
+ "scaling": "fixed",
+ "tract_is_permissive": true,
+ "tract_basis": "Say why this boundary is ground where Carlin-type deposits can form (for example: platform and basin-margin carbonate and fine-clastic strata east of a terrane-bounding fault)",
+ "layers": {
+  "arch_fault_density": {
+   "file": "faults.gpkg",
+   "weight_field": "F_TYPE",
+   "weights": {
+    "thrust known": 0.5,
+    "thrust": 0.35,
+    "known": 1.0,
+    "inferred": 0.7,
+    "concealed": 0.4
+   },
+   "scale_field": "(optional) name of the map-scale field in the fault file",
+   "common_scale": 250
+  },
+  "arch_fault_intersection_density": {
+   "file": "faults.gpkg",
+   "field": "F_TYPE",
+   "a_regex": "^(known|inferred|concealed)\\s+fault|^fault scarp",
+   "b_regex": "thrust",
+   "scale_field": "(optional) name of the map-scale field in the fault file",
+   "common_scale": 250
+  },
+  "arch_fluid_pathway_connectivity": {
+   "file": "faults.gpkg",
+   "radius_km": 5,
+   "scale_field": "(optional) name of the map-scale field in the fault file",
+   "common_scale": 250
+  },
+  "arch_structural_complexity": {
+   "file": "faults.gpkg",
+   "scale_field": "(optional) name of the map-scale field in the fault file",
+   "common_scale": 250
+  },
+  "arch_lithologic_contact_proximity": {
+   "file": "geology.shp",
+   "field": "L_NAME",
+   "regex": "carbonate|limestone|dolomit"
+  },
+  "trap_reactive_carbonate": {
+   "file": "geology.shp",
+   "field": "L_NAME",
+   "regex": "limestone|dolomit|carbonate"
+  },
+  "trap_impermeable_cap": {
+   "file": "geology.shp",
+   "field": "L_NAME",
+   "regex": "shale|argillite|siltstone|mudstone|slate|chert"
+  },
+  "trap_argillic_k_depletion": {
+   "k": "K_radiometrics.tif",
+   "lithology": {
+    "file": "geology.shp",
+    "field": "FMATN"
+   }
+  },
+  "trap_fluid_chemistry": {
+   "file": "geochemistry.gpkg",
+   "pathfinders": [
+    "As_ppm",
+    "Sb_ppm",
+    "Tl_ppm"
+   ],
+   "immobiles": [
+    "Al_pct",
+    "Ti_pct",
+    "Th_ppm"
+   ]
+  },
+  "trap_preservation": {
+   "depth": "depth_to_basement.tif",
+   "cover": {
+    "file": "geology.shp",
+    "field": "FMATN",
+    "regex": "^(Q|QT)"
+   },
+   "breaks": [
+    100,
+    300,
+    600
+   ]
+  },
+  "eng_eocene_belt_density": {
+   "geochron": {
+    "ar": "ar40ar39_USGS_data_release_v4.csv",
+    "kar": "kar_USGS_data_release_v4.csv",
+    "samples": "samples_USGS_data_release_v4.csv"
+   },
+   "age_min": 36,
+   "age_max": 42
+  },
+  "src_eocene_intrusive_proximity": {
+   "geochron": {
+    "ar": "ar40ar39_USGS_data_release_v4.csv",
+    "kar": "kar_USGS_data_release_v4.csv",
+    "samples": "samples_USGS_data_release_v4.csv"
+   },
+   "age_min": 36,
+   "age_max": 42
+  },
+  "eng_volcanic_intrusive_proximity": {
+   "file": "geology.shp",
+   "field": "L_NAME",
+   "regex": "intrus|pluton|stock|dike|granit|rhyolit"
+  },
+  "eng_buried_pluton_proximity": {
+   "gravity": "gravity.tif",
+   "magnetics": "magnetics.tif",
+   "intrusive": {
+    "file": "geology.shp",
+    "field": "L_NAME",
+    "regex": "intrus|pluton|stock|granit"
+   }
+  },
+  "eng_mantle_upwelling": {
+   "gravity": "gravity.tif",
+   "height_m": 8000
+  },
+  "src_jurassic_cretaceous_intrusive_proximity": {
+   "file": "geology.shp",
+   "field": "FMATN",
+   "regex": "^[JK]",
+   "age_field": "L_NAME",
+   "age_regex": "granit|pluton|diorit|intrusiv|stock"
+  },
+  "src_basement_proximity": {
+   "file": "geology.shp",
+   "field": "FMATN",
+   "regex": "^pC(?!g$)"
+  },
+  "src_low_magmatic_fertility": {
+   "file": "geochemistry.gpkg",
+   "sr": "Sr_ppm",
+   "y": "Y_ppm",
+   "la": "La_ppm"
+  },
+  "src_crustal_gradient_fav": {
+   "gravity": "gravity.tif"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "n_magmatic_deposits": 40,
+ "n_in_tract": 37,
+ "spearman_engine_vs_original": 0.5828305313947104,
+ "in_sample_capture": {
+  "top 5%": 0.925,
+  "top 10%": 0.925,
+  "top 20%": 0.925
+ }
+}

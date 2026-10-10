@@ -1,0 +1,22 @@
+{
+ "crs": "EPSG:3578",
+ "cell": 1000,
+ "data_dir": "/home/claude/yukon_run/prep",
+ "tract": {"file": "study_area.gpkg"},
+ "layers": {
+  "arch_fault_density": {"file": "faults_classed.gpkg", "weight_field": "F_CLASS", "weights": {"thrust known": 0.5, "thrust inferred": 0.35, "known fault": 1.0, "inferred fault": 0.7, "concealed fault": 0.4}},
+  "arch_fault_intersection_density": {"file": "faults_classed.gpkg", "field": "F_CLASS", "a_regex": "^(known|inferred|concealed) fault", "b_regex": "thrust"},
+  "arch_fluid_pathway_connectivity": {"file": "faults_classed.gpkg", "radius_km": 5},
+  "arch_structural_complexity": {"file": "faults_classed.gpkg"},
+  "trap_reactive_carbonate": {"file": "geology_selected.gpkg", "field": "SEL_REACTIVE", "regex": "^reactive$"},
+  "trap_impermeable_cap": {"file": "geology_selected.gpkg", "field": "SEL_CAP", "regex": "^cap$"},
+  "trap_fluid_chemistry": {"file": "rgs_clean.gpkg", "pathfinders": ["AS_INA_PPM", "SB_INA_PPM", "AU_INA_PPB"], "immobiles": ["TH_INA_PPM", "HF_INA_PPM", "SC_INA_PPM"]},
+  "eng_eocene_belt_density": {"file": "window_igneous_points.gpkg", "age_field": "age", "age_min": 68, "age_max": 80},
+  "src_eocene_intrusive_proximity": {"file": "window_igneous_points.gpkg", "age_field": "age", "age_min": 68, "age_max": 80},
+  "eng_volcanic_intrusive_proximity": {"file": "geology_selected.gpkg", "field": "SEL_IGNEOUS", "regex": "^igneous$"},
+  "src_jurassic_cretaceous_intrusive_proximity": {"file": "geology_selected.gpkg", "field": "SEL_PREORE", "regex": "^preore$"},
+  "src_basement_proximity": {"file": "geology_selected.gpkg", "field": "SEL_BASEMENT", "regex": "^basement$"},
+  "eng_mantle_upwelling": {"gravity": "gravity_rank_decoded.tif", "height_m": 8000},
+  "src_crustal_gradient_fav": {"gravity": "gravity_rank_decoded.tif"}
+ }
+}

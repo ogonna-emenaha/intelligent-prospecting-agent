@@ -1,0 +1,12 @@
+layer,spearman_vs_original
+Proximity to volcanic and intrusive rocks,0.964
+"Intrusive belt density, 36-42 Ma window",0.995
+"Proximity to intrusions, 36-42 Ma window",0.803
+"Fault density (weighted line density, 10 km)",0.979
+Fault intersection proximity (supplied intersections),0.999
+"Structural complexity (1 - R, 10 km)",0.989
+Distance from basement outcrops (pC units),1.0
+Proximity to older (Jurassic-Cretaceous) intrusions,1.0
+Proximity to lithologic contacts (unit boundaries),0.118
+Mantle upwelling (gravity upward-continued 8 km),0.998
+Crustal gradient (log total horizontal gradient),0.901
