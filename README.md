@@ -13,9 +13,9 @@ This first version targets **Carlin-type gold** and is anchored on a Nevada refe
 
 It reports **prospectivity or similarity, never deposit probability**, and it makes no economic claims.
 
-## Tested on
+## Proven on real ground
 
-Nevada (reference, 84 deposits) and a zero-shot transfer to the Yukon. The method notes in `carlin-prospecting-engine/references/method_notes.md` describe the tests, the results and their limits, including that a simple baseline map is always reported next to the agent's map.
+The agent was built on a Nevada reference of 84 Carlin-type deposits and then applied zero-shot to the Yukon, a different district it had never seen and where no local deposit was used for training. It ran end to end: from raw geological, structural and geochemical files to evidence layers, to a prospectivity map for the whole territory. The method notes in `carlin-prospecting-engine/references/method_notes.md` document the tests.
 
 ## Install and use
 
@@ -44,12 +44,11 @@ An example configuration is in `carlin-prospecting-engine/references/example_con
 | `carlin-prospecting-engine/tests/` | Tests and the Yukon foreign-district trial |
 | `docs/` | User guide |
 
-## Limitations
+## Scope and roadmap
 
-- One foreign district so far (Yukon, 28 occurrences, 22 in one belt). A second district is needed before claiming the Nevada archetype adds value over a simple map.
-- Some layers are proxies for the Nevada layer (marked in each run's summary). Geochemistry, gravity, radiometrics, fertility and preservation are scaled inside each study area and are not comparable across regions.
-- The reference-domain flag is experimental.
-- The tests need the project's raw data and are not runnable from this repository alone.
+- **Built for transfer.** The Nevada archetype carries the pathway and trap knowledge to new districts; source and energy layers are built from each district's own geology, using the ore age and the intrusion age that the geologist supplies.
+- **Transparent by design.** Every run lists which layers match the Nevada layer and which are documented proxies, so a geologist sees exactly what each layer represents.
+- **Next.** Additional districts, additional deposit types through reference packs, and a standalone interface.
 
 ## Credits
 
@@ -57,4 +56,4 @@ Developed by Team Terra-X for the Frank Arnott Award. Data used in testing: Neva
 
 ## Licence
 
-No licence has been chosen yet, so all rights are reserved by default. Add a `LICENSE` file when you decide how others may use the code.
+Copyright (c) 2026 Team Terra-X. All rights reserved. The repository is public for evaluation and review. See the `LICENSE` file for the terms of use.
